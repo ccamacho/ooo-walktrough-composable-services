@@ -12,14 +12,14 @@ In: tripleo-heat-templates/overcloud.yaml
 
 ::
 
-                ---> #Reference to a custom Heat resource
-                |    #to create the network architecture, defined in:
-                |    #tripleo-heat-templates/overcloud-resource-registry-puppet.yaml
-  resources:    |    #the network resource will point to network/networks.yaml
+                ---> Reference to a custom Heat resource
+                |    to create the network architecture, defined in:
+                |    tripleo-heat-templates/overcloud-resource-registry-puppet.yaml,
+  resources:    |    the network resource will point to network/networks.yaml
     Networks:   |
-      type: OS::TripleO::Network  ---> # Also nested resources can be defined,
-                                  |    # in this case, the RedisVipPort will be
-    RedisVirtualIP:               |    # defined in network/ports/ctlplane_vip.yaml
+      type: OS::TripleO::Network  ---> Also nested resources can be defined,
+                                  |    in this case, the RedisVipPort will be
+    RedisVirtualIP:               |    defined in network/ports/ctlplane_vip.yaml
       depends_on: Networks        |
       type: OS::TripleO::Network::Ports::RedisVipPort
       properties:
