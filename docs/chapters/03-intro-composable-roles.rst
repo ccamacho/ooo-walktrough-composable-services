@@ -1,4 +1,5 @@
 Composable roles within services
 ------------------------------
 
-Asdf
+Dentro de: tripleo-heat-templates/overcloud-resource-registry-puppet.yaml
+crear ref para neutron.
