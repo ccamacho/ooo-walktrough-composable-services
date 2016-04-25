@@ -17,15 +17,14 @@ In: tripleo-heat-templates/overcloud.yaml
 
 ::
 
-                ---> #Reference to a custom Heat resource to create the network architecture,
-                |    #defined in tripleo-heat-templates/overcloud-resource-registry-puppet.yaml
-                |    #the network resource will be defined in network/networks.yaml
-                |
-  resources:    |
+                ---> #Reference to a custom Heat resource
+                |    #to create the network architecture, defined in
+                |    #tripleo-heat-templates/overcloud-resource-registry-puppet.yaml
+  resources:    |    #the network resource will be defined in network/networks.yaml
     Networks:   |
-      type: OS::TripleO::Network       ---> #Also nested resources can be defined, in this
-                                       |    #case, the RedisVipPort is defined in network/ports/ctlplane_vip.yaml
-    RedisVirtualIP:                    |
+      type: OS::TripleO::Network       ---> # Also nested resources can be defined,
+                                       |    # in this case, the RedisVipPort is
+    RedisVirtualIP:                    |    # defined in network/ports/ctlplane_vip.yaml
       depends_on: Networks             |
       type: OS::TripleO::Network::Ports::RedisVipPort
       properties:
@@ -36,7 +35,8 @@ In: tripleo-heat-templates/overcloud.yaml
         ServiceName: redis
 
 
-The most relevant part is that all custom resources for T-H-T are defined in: tripleo-heat-templates/overcloud-resource-registry-puppet.yaml
+The most relevant part is that all custom resources for T-H-T are defined
+in: tripleo-heat-templates/overcloud-resource-registry-puppet.yaml
 
 
 
