@@ -15,6 +15,7 @@ Lets describe some THT nested features.
 In: tripleo-heat-templates/overcloud.yaml
 
 
+::
 
               ---> #Reference to a custom Heat resource to create the network architecture,
               |    #defined in tripleo-heat-templates/overcloud-resource-registry-puppet.yaml
