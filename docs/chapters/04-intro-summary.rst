@@ -1,16 +1,9 @@
 Intro
 =====
 
-The Heat orchestration service
-------------------------------
+Sumary
+------
 
-Template-based orchestration engine for OpenStack resources (Storage, Networking, Images, Instances, applications, *).
-
-Templates create stacks -> Collection of resources.
-
-
-TripleO -> Deploy OpenStack using OpenStack 
-(A template will describe the services deployed and configured to have an OpenStack cloud)
 
 
 References:
