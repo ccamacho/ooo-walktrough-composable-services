@@ -1,6 +1,3 @@
-Intro
-=====
-
 Composable roles within services
 ------------------------------
 

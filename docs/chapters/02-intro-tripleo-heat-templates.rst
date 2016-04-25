@@ -1,6 +1,3 @@
-Intro
-=====
-
 TripleO Heat Templates
 ----------------------
 

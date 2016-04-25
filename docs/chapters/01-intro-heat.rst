@@ -1,6 +1,3 @@
-Intro
-=====
-
 The Heat orchestration service
 ------------------------------
 
