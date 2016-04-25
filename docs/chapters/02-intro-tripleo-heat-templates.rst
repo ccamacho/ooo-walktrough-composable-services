@@ -1,17 +1,12 @@
 TripleO Heat Templates
 ----------------------
 
-TripleO -> Deploy OpenStack using OpenStack
-(A template will describe the services deployed and configured to have an OpenStack cloud)
 
+TripleO -> Deploy OpenStack using OpenStack. Then forth THT will represent
+a template or a set of nested templates describing the resources deployed and
+configured to have an OpenStack cloud.
 
-
-Using the SoftwareConfig resource from Heat we will deploy/configure OpenStack and all (For now)
-mandatory services.
-
-
-
-Lets describe some THT nested features.
+Let's describe some THT nested features for Neutron services.
 In: tripleo-heat-templates/overcloud.yaml
 
 
